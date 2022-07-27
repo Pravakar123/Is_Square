@@ -1,2 +1,17 @@
-# Is_Square
-Given a Rectangle.  image  Check whether the given rectangle is Square Or Not.  Print "Square" if the rectangle is square else print "Not a Square".  Input Format  Two Lines of input.  First Line will contain an integer as Length of rectangle. Second Line will contain an integer as Breadth of rectangle. Constraints  1&lt;=Length&lt;=1000  1&lt;=Breadth&lt;=1000  Output Format  Single Line of Output  A String "Square" Or "Not a Square".  Sample Input 0  56 56 Sample Output 0  Square Sample Input 1  7 9 Sample Output 1  Not a Square
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        int l=s.nextInt();
+        int b=s.nextInt();
+        int area=l*b;
+        if(l==b)
+            System.out.println("Square");
+        else
+            System.out.println("Not a Square");
+    }
+}
